@@ -110,7 +110,8 @@ getCatering = (msg, date) ->
                   else
                     emit += itemName + '\n'
 
-                  emit += ' - ' + dish.description + '\n'
+                  if dish.description != ''
+                    emit += ' - ' + dish.description + '\n'
 
                   emit += '\n'
 
