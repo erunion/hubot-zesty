@@ -1,6 +1,6 @@
 {
   "name": "hubot-zesty",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "description": "A Hubot plugin to tell you what Zesty is catering to your office today.",
   "keywords": [
