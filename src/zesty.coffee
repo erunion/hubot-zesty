@@ -102,13 +102,13 @@ getCatering = (msg, date) ->
             if items.indexOf(item.id) != -1
               for dish in catering.dishes
                 if dish.id == item.dish
-                  itemName = item.name.replace(/Catering: /, '');
+                  dishName = dish.name.trim()
 
                   modifiers = getDishModifiers(dish)
                   if modifiers.length > 0
-                    emit += itemName + ' (' + modifiers.join(', ') + ')\n'
+                    emit += dishName + ' (' + modifiers.join(', ') + ')\n'
                   else
-                    emit += itemName + '\n'
+                    emit += dishName + '\n'
 
                   if dish.description != ''
                     emit += ' - ' + dish.description + '\n'
