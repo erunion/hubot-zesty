@@ -9,15 +9,15 @@ A [Hubot](https://github.com/github/hubot) plugin to tell you what Zesty is cate
 
 #### Configuration
 
-You'll need to add a `HUBOT_ZESTY_ACCOUNT_NAME` variable into your environment with the value being that that exists in your Zesty menu URL: `www.zesty.com/account-name`
+You'll need to add a `HUBOT_ZESTY_ACCOUNT_ID` variable into your environment with the value being your Zesty client ID found in your dashboard URL.
 
 #### Heroku
 
-    % heroku config:add HUBOT_ZESTY_ACCOUNT_NAME="your-zesty-account-name"
+    % heroku config:add HUBOT_ZESTY_ACCOUNT_ID="your-zesty-account-ID"
 
 #### Non-Heroku environment variables
 
-    % export HUBOT_ZESTY_ACCOUNT_NAME="your-zesty-account-name"
+    % export HUBOT_ZESTY_ACCOUNT_ID="your-zesty-account-ID"
 
 ### Installation
 1. Edit `package.json` and add `hubot-zesty` as a dependency.
